@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Number guessing game 3</title>
+    </head>
+    <body>
+        <h1>Number guessing game 3</h1>
+        <h2>Guessing {{ guess }}</h2>
+        <form method="POST">
+        <input type="hidden" name="min" value="{{ min }}">
+        <input type="hidden" name="max" value="{{ max }}">
+        <button name="feedback" value="small">Too small</button>
+        <button name="feedback" value="big">Too big</button>
+        <button name="feedback" value="win">You win</button>
+        </form>
+    </body>
+</html>
